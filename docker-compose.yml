@@ -1,0 +1,7 @@
+version: '3'
+services:
+ infodisc:
+   image: vaday/infodisc:43872
+   command: /bin/bash -c "service apache2 start; service mysql start; tail -f /dev/null"
+   ports:
+    - 7061:80
